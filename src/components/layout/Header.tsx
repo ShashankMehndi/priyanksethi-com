@@ -83,7 +83,22 @@ export function Header() {
         </Link>
 
         {/* Same width as menu button so the brand reads centered on mobile */}
-        <div className="order-3 size-[38px] shrink-0 md:order-5 md:hidden" aria-hidden />
+        <a
+          href={DOCTOR.brand.parentBrand.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="order-3 flex size-[38px] shrink-0 items-center justify-center rounded-full border border-section-alt bg-white shadow-sm ring-1 ring-black/[0.04] md:order-5 md:hidden"
+          aria-label={`${DOCTOR.brand.parentBrand.name} (opens in new tab)`}
+        >
+          <img
+            src={`${DOCTOR.brand.parentBrand.url.replace(/\/$/, "")}/favicon.ico`}
+            alt=""
+            width={24}
+            height={24}
+            className="size-6 object-contain"
+            decoding="async"
+          />
+        </a>
 
         <nav className="order-4 hidden md:order-2 md:block">
           <ul className="flex items-center gap-1 text-sm">
