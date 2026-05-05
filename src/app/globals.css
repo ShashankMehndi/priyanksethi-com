@@ -1,0 +1,76 @@
+@import "tailwindcss";
+@config "../../tailwind.config.ts";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  /** Section bands — warm cream alternating with deeper sand */
+  --section-surface: #FFFAF0;
+  --section-surface-alt: #F5EFE0;
+
+  /** Brand tokens — Dr. Priyank Sethi portfolio (mirror of src/lib/brand-tokens.ts) */
+  --brand-gold: #FFB301;
+  --brand-gold-soft: #FFD15C;
+  --brand-gold-deep: #A87400;
+  --brand-ink: #222222;
+  --brand-ink-soft: #4A4A4A;
+  --brand-accent: #DE3926;
+
+  /** Gradient tokens */
+  --grad-gold-hero: linear-gradient(135deg, #FFD15C 0%, #FFB301 50%, #A87400 100%);
+  --grad-ink-rail: linear-gradient(180deg, #222222 0%, #000000 100%);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-playfair);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter, Inter, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Headings default to display font */
+h1, h2, h3, h4 {
+  font-family: var(--font-playfair, "Playfair Display", serif);
+  letter-spacing: -0.01em;
+}
+
+/* Hide scrollbar utility */
+.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+.hide-scrollbar::-webkit-scrollbar { display: none; width: 0; height: 0; }
+
+/* Inline link style — gold underline that thickens on hover */
+.prose-portfolio a,
+a.portfolio-link {
+  color: var(--brand-ink);
+  text-decoration: underline;
+  text-decoration-color: var(--brand-gold);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  transition: text-decoration-thickness 120ms ease;
+}
+.prose-portfolio a:hover,
+a.portfolio-link:hover {
+  text-decoration-thickness: 3px;
+}
+
+/* Award / press strip marquee */
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-marquee-scroll {
+  animation: marquee-scroll var(--dur, 30s) linear infinite;
+  will-change: transform;
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee-scroll { animation: none; }
+}
