@@ -4,8 +4,10 @@ import { Analytics } from "@vercel/analytics/next";
 import Script from "next/script";
 
 import { DOCTOR } from "@/config/doctor";
+import { AnnouncementTicker } from "@/components/layout/AnnouncementTicker";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { MobileBottomBar } from "@/components/layout/MobileBottomBar";
 
 import "./globals.css";
 
@@ -42,10 +44,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   const ga = DOCTOR.analytics.gaMeasurementId;
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
-      <body className="min-h-screen bg-white font-body text-brand-ink antialiased">
+      <body className="min-h-screen bg-white font-body text-brand-ink antialiased pb-[calc(2.75rem+2.5rem+env(safe-area-inset-bottom,0px))] md:pb-0">
+        <AnnouncementTicker />
         <Header />
         <main>{children}</main>
         <Footer />
+        <MobileBottomBar />
 
         {ga && (
           <>

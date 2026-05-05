@@ -1,5 +1,7 @@
+import Link from "next/link";
 import { getPage } from "@/lib/content-loader";
 import { buildMetadata } from "@/lib/seo";
+import { DOCTOR } from "@/config/doctor";
 import { DoctorHero } from "@/components/sections/DoctorHero";
 import { GlobalReachStat } from "@/components/sections/GlobalReachStat";
 import { CaseStudyGrid, type CaseEntry } from "@/components/sections/CaseStudyGrid";
@@ -41,11 +43,34 @@ export default function HomePage() {
         <Container size="md">
           <SectionHeader
             eyebrow="At a glance"
-            title="A clinician built for complex cases"
-            lede="Two decades treating implant and full-mouth cases other practices have declined. International patients fly in for compressed-timeline care delivered by one operator from plan to outcome."
+            title="The specialist — and the practice he founded"
+            lede={
+              <>
+                <p>
+                  <span className="font-semibold text-brand-ink">{DOCTOR.name}</span> ({DOCTOR.postNominals}) is an
+                  implant and cosmetic dentist with two decades on complex full-mouth and implant rehabilitation —
+                  including cases other practices have declined. International patients routinely travel to Delhi for
+                  compressed timelines, with one operator guiding plan through outcome.
+                </p>
+                <p>
+                  From that work he founded{" "}
+                  <Link
+                    href="/stunning-dentistry"
+                    className="font-semibold text-brand-blue underline decoration-brand-blue/40 underline-offset-2 transition hover:decoration-brand-blue"
+                  >
+                    {DOCTOR.brand.parentBrand.name}
+                  </Link>
+                  — boutique clinics in South and North Delhi built around{" "}
+                  <span className="font-semibold text-brand-ink">{DOCTOR.philosophy}</span>.
+                </p>
+              </>
+            }
           />
           <div className="flex flex-wrap gap-3">
             <Button href="/about" variant="primary">Read the bio</Button>
+            <Button href="/stunning-dentistry" variant="ghost">
+              About Stunning Dentistry
+            </Button>
             <Button href="/credentials" variant="ghost">Credentials</Button>
             <Button href="/awards" variant="ghost">Awards</Button>
           </div>

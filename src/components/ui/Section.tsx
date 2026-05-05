@@ -36,7 +36,8 @@ export function SectionHeader({
 }: {
   eyebrow?: string;
   title: string;
-  lede?: string;
+  /** Plain string or multiple paragraphs / links (e.g. doctor → practice story). */
+  lede?: ReactNode;
   align?: "left" | "center";
 }) {
   return (
@@ -49,7 +50,11 @@ export function SectionHeader({
       <h2 className="font-heading text-3xl font-semibold tracking-tight text-current md:text-4xl">
         {title}
       </h2>
-      {lede && <p className="mt-4 text-base text-brand-ink-soft md:text-lg">{lede}</p>}
+      {lede != null && lede !== "" && (
+        <div className="mt-4 space-y-4 text-base text-brand-ink-soft md:text-lg">
+          {typeof lede === "string" ? <p>{lede}</p> : lede}
+        </div>
+      )}
     </header>
   );
 }

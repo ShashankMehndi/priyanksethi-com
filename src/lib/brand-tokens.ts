@@ -1,36 +1,50 @@
 /**
- * Brand Tokens — Dr. Priyank Sethi (portfolio)
+ * Brand Tokens — aligned with the Stunning Dentistry network palette.
  *
- * Doctor's personal palette. Distinct from the Stunning Dentistry network
- * palette (which is blue + muted gold). Here: a bright warm gold, ink, and a
- * red accent — carried over from the legacy priyanksethi.com site so the
- * brand stays visually continuous through the rebuild.
+ * Per the SD brand guideline (`stunningdentistry-au/src/lib/brand-tokens.ts`),
+ * every property in the SD family — including this doctor portfolio — uses:
+ *   primary blue + dark navy + accent gold + ivory section bands.
+ *
+ * The doctor's legacy yellow/gold/red palette was retired during the visual
+ * realignment so priyanksethi.com slots cleanly into the SD network look.
  *
  * The CSS custom-property mirror lives in src/app/globals.css. If you change
  * a token here, change the corresponding `--brand-*` variable too.
  */
 
 export const PALETTE = {
-  label: "Dr. Priyank Sethi — Portfolio",
+  label: "Stunning Dentistry — World-Class Clinic",
+  blue: {
+    primary: "#0058C8",
+    hover: "#0048A3",
+    light: "#2563EB",
+    deep: "#001070",
+  },
   gold: {
-    primary: "#FFB301",
-    soft: "#FFD15C",
-    deep: "#A87400",
+    primary: "#C9A84C",
+    soft: "#D4BC70",
+    deep: "#8D6E1B",
+    top: "#F9E08E",
+    mid: "#D4AF37",
   },
   ink: {
-    primary: "#222222",
-    soft: "#4A4A4A",
+    primary: "#1B2A4A",
+    soft: "#4A5878",
+    deep: "#0F1A30",
   },
   accent: "#DE3926",
   surface: {
     background: "#FFFFFF",
     foreground: "#171717",
-    sectionWarm: "#FFFAF0",
-    sectionAlt: "#F5EFE0",
+    sectionWarm: "#FBF6EA",
+    sectionAlt: "#F3E8D6",
   },
   gradients: {
-    goldHero: "linear-gradient(135deg, #FFD15C 0%, #FFB301 50%, #A87400 100%)",
-    inkRail: "linear-gradient(180deg, #222222 0%, #000000 100%)",
+    brandBlue: "linear-gradient(135deg, #0057B8 0%, #2563EB 100%)",
+    deepNavy: "linear-gradient(160deg, #001070 0%, #0057B8 100%)",
+    trustStrip: "linear-gradient(136deg, #0057B8 0%, #001070 100%)",
+    goldLuxury: "linear-gradient(180deg, #F9E08E 0%, #D4AF37 48%, #8D6E1B 100%)",
+    goldCta: "linear-gradient(180deg, #F2C94C 0%, #D4AF37 45%, #8D6E1B 100%)",
   },
 } as const;
 

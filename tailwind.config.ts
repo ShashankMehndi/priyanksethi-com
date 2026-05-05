@@ -9,13 +9,23 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Doctor portfolio palette — gold + ink + accent
         brand: {
+          // Blue (primary)
+          blue: "var(--brand-blue)",
+          "blue-hover": "var(--brand-blue-hover)",
+          "blue-light": "var(--brand-blue-light)",
+          "blue-deep": "var(--brand-blue-deep)",
+          // Gold (accent)
           gold: "var(--brand-gold)",
           "gold-soft": "var(--brand-gold-soft)",
           "gold-deep": "var(--brand-gold-deep)",
+          "gold-mid": "var(--brand-gold-mid)",
+          "gold-top": "var(--brand-gold-top)",
+          // Ink
           ink: "var(--brand-ink)",
           "ink-soft": "var(--brand-ink-soft)",
+          "ink-deep": "var(--brand-ink-deep)",
+          // Accent (sparingly)
           accent: "var(--brand-accent)",
         },
         section: {

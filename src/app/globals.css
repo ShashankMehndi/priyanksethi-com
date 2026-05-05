@@ -5,21 +5,36 @@
   --background: #ffffff;
   --foreground: #171717;
 
-  /** Section bands — warm cream alternating with deeper sand */
-  --section-surface: #FFFAF0;
-  --section-surface-alt: #F5EFE0;
+  /** Section bands — warm ivory alternating with deeper sand (SD standard) */
+  --section-surface: #FBF6EA;
+  --section-surface-alt: #F3E8D6;
 
-  /** Brand tokens — Dr. Priyank Sethi portfolio (mirror of src/lib/brand-tokens.ts) */
-  --brand-gold: #FFB301;
-  --brand-gold-soft: #FFD15C;
-  --brand-gold-deep: #A87400;
-  --brand-ink: #222222;
-  --brand-ink-soft: #4A4A4A;
+  /** Brand Blue — single SD palette (mirror of src/lib/brand-tokens.ts blue) */
+  --brand-blue: #0058C8;
+  --brand-blue-hover: #0048A3;
+  --brand-blue-light: #2563EB;
+  --brand-blue-deep: #001070;
+
+  /** Brand Gold — accent only on this site (SD standard) */
+  --brand-gold: #C9A84C;
+  --brand-gold-soft: #D4BC70;
+  --brand-gold-deep: #8D6E1B;
+  --brand-gold-top: #F9E08E;
+  --brand-gold-mid: #D4AF37;
+
+  /** Ink — dark navy text and surfaces */
+  --brand-ink: #1B2A4A;
+  --brand-ink-soft: #4A5878;
+  --brand-ink-deep: #0F1A30;
+
   --brand-accent: #DE3926;
 
-  /** Gradient tokens */
-  --grad-gold-hero: linear-gradient(135deg, #FFD15C 0%, #FFB301 50%, #A87400 100%);
-  --grad-ink-rail: linear-gradient(180deg, #222222 0%, #000000 100%);
+  /** Gradient tokens (SD standard) */
+  --grad-brand-blue: linear-gradient(135deg, #0057B8 0%, #2563EB 100%);
+  --grad-deep-navy: linear-gradient(160deg, #001070 0%, #0057B8 100%);
+  --grad-trust-strip: linear-gradient(136deg, #0057B8 0%, #001070 100%);
+  --grad-gold-luxury: linear-gradient(180deg, #F9E08E 0%, #D4AF37 48%, #8D6E1B 100%);
+  --grad-gold-cta: linear-gradient(180deg, #F2C94C 0%, #D4AF37 45%, #8D6E1B 100%);
 }
 
 @theme inline {
@@ -37,7 +52,6 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* Headings default to display font */
 h1, h2, h3, h4 {
   font-family: var(--font-playfair, "Playfair Display", serif);
   letter-spacing: -0.01em;
@@ -52,7 +66,7 @@ h1, h2, h3, h4 {
 a.portfolio-link {
   color: var(--brand-ink);
   text-decoration: underline;
-  text-decoration-color: var(--brand-gold);
+  text-decoration-color: var(--brand-blue);
   text-decoration-thickness: 2px;
   text-underline-offset: 3px;
   transition: text-decoration-thickness 120ms ease;
@@ -60,6 +74,7 @@ a.portfolio-link {
 .prose-portfolio a:hover,
 a.portfolio-link:hover {
   text-decoration-thickness: 3px;
+  color: var(--brand-blue);
 }
 
 /* Award / press strip marquee */
@@ -74,3 +89,13 @@ a.portfolio-link:hover {
 @media (prefers-reduced-motion: reduce) {
   .animate-marquee-scroll { animation: none; }
 }
+
+/* Carousel — horizontal touch-scroll with snap. Buttons render outside. */
+.snap-row {
+  scroll-snap-type: x mandatory;
+  scroll-padding-left: 1.25rem;
+  scroll-padding-right: 1.25rem;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+}
+.snap-row > * { scroll-snap-align: start; }
