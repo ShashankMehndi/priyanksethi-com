@@ -66,13 +66,19 @@ export default function HomePage() {
               </>
             }
           />
-          <div className="flex flex-wrap gap-3">
-            <Button href="/about" variant="primary">Read the bio</Button>
-            <Button href="/stunning-dentistry" variant="ghost">
+          <div className="flex flex-wrap gap-2">
+            <Button href="/about" variant="primary" size="sm">
+              Read the bio
+            </Button>
+            <Button href="/stunning-dentistry" variant="ghost" size="sm">
               About Stunning Dentistry
             </Button>
-            <Button href="/credentials" variant="ghost">Credentials</Button>
-            <Button href="/awards" variant="ghost">Awards</Button>
+            <Button href="/credentials" variant="ghost" size="sm">
+              Credentials
+            </Button>
+            <Button href="/awards" variant="ghost" size="sm">
+              Awards
+            </Button>
           </div>
         </Container>
       </Section>

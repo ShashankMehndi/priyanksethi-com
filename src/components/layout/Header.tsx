@@ -49,8 +49,31 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-40 w-full border-b border-section-alt bg-white/85 backdrop-blur">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 py-3 md:px-8 md:py-4">
-        <Link href="/" className="flex flex-col leading-tight">
+      <div className="mx-auto flex w-full max-w-7xl items-center gap-3 px-5 py-3 md:justify-between md:gap-6 md:px-8 md:py-4">
+        <button
+          type="button"
+          onClick={() => setMobileOpen((v) => !v)}
+          className="order-1 shrink-0 rounded-md border border-section-alt p-2 md:order-4 md:hidden"
+          aria-label="Toggle menu"
+          aria-expanded={mobileOpen}
+        >
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2">
+            {mobileOpen ? (
+              <path d="M6 6L18 18M18 6L6 18" strokeLinecap="round" />
+            ) : (
+              <>
+                <path d="M3 6h18" strokeLinecap="round" />
+                <path d="M3 12h18" strokeLinecap="round" />
+                <path d="M3 18h18" strokeLinecap="round" />
+              </>
+            )}
+          </svg>
+        </button>
+
+        <Link
+          href="/"
+          className="order-2 flex min-w-0 flex-1 flex-col items-center leading-tight md:order-1 md:flex-none md:items-start"
+        >
           <span className="font-heading text-base font-semibold text-brand-ink md:text-lg">
             {DOCTOR.name}
           </span>
@@ -59,7 +82,10 @@ export function Header() {
           </span>
         </Link>
 
-        <nav className="hidden md:block">
+        {/* Same width as menu button so the brand reads centered on mobile */}
+        <div className="order-3 size-[38px] shrink-0 md:order-5 md:hidden" aria-hidden />
+
+        <nav className="order-4 hidden md:order-2 md:block">
           <ul className="flex items-center gap-1 text-sm">
             {NAV.map((item) => (
               <li key={item.href} className="group relative">
@@ -93,30 +119,10 @@ export function Header() {
 
         <Link
           href="/e-consult"
-          className="hidden rounded-full bg-brand-gold px-4 py-2 text-sm font-semibold text-brand-ink shadow-sm hover:bg-brand-gold-soft md:inline-flex"
+          className="order-5 hidden rounded-full bg-brand-gold px-4 py-2 text-sm font-semibold text-brand-ink shadow-sm hover:bg-brand-gold-soft md:order-3 md:inline-flex"
         >
           E-Consult
         </Link>
-
-        <button
-          type="button"
-          onClick={() => setMobileOpen((v) => !v)}
-          className="rounded-md border border-section-alt p-2 md:hidden"
-          aria-label="Toggle menu"
-          aria-expanded={mobileOpen}
-        >
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2">
-            {mobileOpen ? (
-              <path d="M6 6L18 18M18 6L6 18" strokeLinecap="round" />
-            ) : (
-              <>
-                <path d="M3 6h18" strokeLinecap="round" />
-                <path d="M3 12h18" strokeLinecap="round" />
-                <path d="M3 18h18" strokeLinecap="round" />
-              </>
-            )}
-          </svg>
-        </button>
       </div>
 
       {mobileOpen && (

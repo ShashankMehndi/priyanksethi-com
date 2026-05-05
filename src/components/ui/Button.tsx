@@ -2,6 +2,12 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 
 type Variant = "primary" | "ghost" | "ghostOnInk" | "ink" | "gold";
+type Size = "md" | "sm";
+
+const sizeStyles: Record<Size, string> = {
+  md: "gap-2 px-6 py-3 text-sm",
+  sm: "gap-1.5 px-4 py-2 text-xs",
+};
 
 const styles: Record<Variant, string> = {
   // Primary = SD brand blue (per SD-CA conventions)
@@ -24,12 +30,14 @@ export function Button({
   href,
   children,
   variant = "primary",
+  size = "md",
   className = "",
   external = false,
 }: {
   href: string;
   children: ReactNode;
   variant?: Variant;
+  size?: Size;
   className?: string;
   external?: boolean;
 }) {
@@ -40,7 +48,7 @@ export function Button({
       : variant === "gold"
         ? { background: "var(--grad-gold-cta)" }
         : undefined;
-  const cls = `inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition ${styles[variant]} ${className}`;
+  const cls = `inline-flex items-center justify-center rounded-full font-semibold transition ${sizeStyles[size]} ${styles[variant]} ${className}`;
   if (external) {
     return (
       <a href={href} className={cls} style={inlineBg} target="_blank" rel="noopener noreferrer">
