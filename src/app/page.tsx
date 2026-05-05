@@ -15,7 +15,7 @@ import { Button } from "@/components/ui/Button";
 import { PersonSchema } from "@/components/seo/PersonSchema";
 
 export const metadata = buildMetadata({
-  title: "Dr. Priyank Sethi — Implant & Cosmetic Dentist · Founder, Stunning Dentistry",
+  title: "Dr. Priyank Sethi - Implant & Cosmetic Dentist · Founder, Stunning Dentistry",
   description:
     "BDS · MDS · Ph.D. (Faculty of Dental Sciences). Founder of Stunning Dentistry. Over 1,000 patients treated across 30+ countries.",
   path: "/",
@@ -43,12 +43,12 @@ export default function HomePage() {
         <Container size="md">
           <SectionHeader
             eyebrow="At a glance"
-            title="The specialist — and the practice he founded"
+            title="The specialist and the practice he founded"
             lede={
               <>
                 <p>
                   <span className="font-semibold text-brand-ink">{DOCTOR.name}</span> ({DOCTOR.postNominals}) is an
-                  implant and cosmetic dentist with two decades on complex full-mouth and implant rehabilitation —
+                  implant and cosmetic dentist with two decades on complex full-mouth and implant rehabilitation,
                   including cases other practices have declined. International patients routinely travel to Delhi for
                   compressed timelines, with one operator guiding plan through outcome.
                 </p>
@@ -60,7 +60,7 @@ export default function HomePage() {
                   >
                     {DOCTOR.brand.parentBrand.name}
                   </Link>
-                  — boutique clinics in South and North Delhi built around{" "}
+                  , with boutique clinics in South and North Delhi built around{" "}
                   <span className="font-semibold text-brand-ink">{DOCTOR.philosophy}</span>.
                 </p>
               </>
@@ -89,7 +89,7 @@ export default function HomePage() {
         <CaseStudyGrid
           eyebrow="Selected work"
           title="Case studies"
-          lede="A portfolio of notable cases — cosmetic, implant, and full-mouth rehabilitation."
+          lede="A portfolio of notable cases - cosmetic, implant, and full-mouth rehabilitation."
           cases={caseList}
         />
       )}
@@ -110,7 +110,7 @@ export default function HomePage() {
         <ReviewsWall
           reviews={reviews}
           title="What patients say"
-          lede={`${reviews.filter((r) => r.quote).length} verified Google reviews — read in full on the testimonials page.`}
+          lede={`${reviews.filter((r) => r.quote).length} verified Google reviews - read in full on the testimonials page.`}
           limit={6}
         />
       )}

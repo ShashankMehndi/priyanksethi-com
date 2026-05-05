@@ -18,12 +18,12 @@ email: enquiry@stunningdentistry.com
 
 ## Clinics
 
-- [South Delhi — Kailash Colony](/clinics/kailash-colony)
-- [North Delhi — Netaji Subhash Place](/clinics/netaji-subhash-place)
+- [South Delhi - Kailash Colony](/clinics/kailash-colony)
+- [North Delhi - Netaji Subhash Place](/clinics/netaji-subhash-place)
 
 ## Online consultation
 
-[Start an E-Consult](/e-consult) — direct line to Dr. Sethi by audio or video.
+[Start an E-Consult](/e-consult) - direct line to Dr. Sethi by audio or video.
 
 ## Social
 

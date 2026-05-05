@@ -24,8 +24,8 @@ BDS · MDS · Ph.D. (Faculty of Dental Sciences)
 
 ## Continue reading
 
-- [Credentials](/credentials) — degrees, certifications, advanced training
-- [Awards](/awards) — recognitions and distinctions
-- [Memberships](/memberships) — professional bodies
-- [Philosophy](/philosophy) — "No-Compromise Dentistry"
-- [Stunning Dentistry](/stunning-dentistry) — the practice he founded
+- [Credentials](/credentials) - degrees, certifications, advanced training
+- [Awards](/awards) - recognitions and distinctions
+- [Memberships](/memberships) - professional bodies
+- [Philosophy](/philosophy) - "No-Compromise Dentistry"
+- [Stunning Dentistry](/stunning-dentistry) - the practice he founded

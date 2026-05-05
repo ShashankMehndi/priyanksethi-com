@@ -1,5 +1,5 @@
 ---
-title: Press feature — feature-04 | Dr. Priyank Sethi
+title: Press feature - feature-04 | Dr. Priyank Sethi
 description: Press feature on Dr. Priyank Sethi.
 url: /press/feature-04
 h1: Press Feature
@@ -15,6 +15,6 @@ source_url: ""
 
 ![Press feature](/images/press/press04.jpg)
 
-> v1 scaffold — fill in: **publication name**, **date**, **headline**, and a 2–3 sentence summary of what was covered. Link to the original source if available.
+> v1 scaffold - fill in: **publication name**, **date**, **headline**, and a 2–3 sentence summary of what was covered. Link to the original source if available.
 
 → Browse all [press](/press)

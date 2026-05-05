@@ -16,7 +16,7 @@ const styles: Record<Variant, string> = {
   // Ghost = neutral outline on light surfaces (!text/!bg so parent `text-white` on section never wins)
   ghost:
     "!bg-white !text-brand-ink border border-brand-ink/15 hover:!border-brand-blue hover:!text-brand-blue",
-  // Ghost on dark ink sections — avoids fighting `ghost` + overrides (same-specificity clashes in CSS)
+  // Ghost on dark ink sections - avoids fighting `ghost` + overrides (same-specificity clashes in CSS)
   ghostOnInk:
     "!border !border-white/30 !bg-transparent !text-white hover:!border-white/50 hover:!bg-white/10",
   // Ink = dark navy (rare; used on light heroes when blue would clash)

@@ -36,7 +36,7 @@ export async function POST(req: Request) {
   }
 
   const submittedAt = new Date().toISOString();
-  const subject = `[${body.formType ?? "enquiry"}] ${name} — ${DOCTOR.shortName} site`;
+  const subject = `[${body.formType ?? "enquiry"}] ${name} - ${DOCTOR.shortName} site`;
 
   const lines: string[] = [
     `Form: ${body.formType ?? "unknown"}`,
@@ -57,7 +57,7 @@ export async function POST(req: Request) {
   const transport = buildTransport();
 
   if (!transport) {
-    // No SMTP configured — log and return 200 so dev / preview environments work.
+    // No SMTP configured - log and return 200 so dev / preview environments work.
     console.warn("[enquiry] SMTP not configured. Logging payload:\n" + text);
     return NextResponse.json({ ok: true, delivered: false });
   }

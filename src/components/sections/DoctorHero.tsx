@@ -76,7 +76,7 @@ export function DoctorHero({
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl ring-1 ring-brand-gold-deep/20 shadow-[0_20px_50px_rgba(141,110,27,0.18)] md:shadow-[0_28px_70px_rgba(141,110,27,0.18)]">
             <Image
               src={portrait}
-              alt={`${DOCTOR.name} — portrait`}
+              alt={`${DOCTOR.name} - portrait`}
               fill
               sizes="(min-width: 768px) 420px, 72vw"
               priority

@@ -1,5 +1,5 @@
 /**
- * Compact trust strip — same warm ivory as CA `bg-section-warm` (`#FBF6EA` via --section-surface).
+ * Compact trust strip - same warm ivory as CA `bg-section-warm` (`#FBF6EA` via --section-surface).
  * Single auto-scrolling marquee row, minimal height (no large Section padding).
  */
 export function GlobalReachStat({

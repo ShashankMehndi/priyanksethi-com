@@ -1,19 +1,22 @@
 /**
- * Brand Tokens — aligned with the Stunning Dentistry network palette.
+ * Brand Tokens - aligned with the Stunning Dentistry network palette.
  *
  * Per the SD brand guideline (`stunningdentistry-au/src/lib/brand-tokens.ts`),
- * every property in the SD family — including this doctor portfolio — uses:
+ * every property in the SD family - including this doctor portfolio - uses:
  *   primary blue + dark navy + accent gold + ivory section bands.
  *
  * The doctor's legacy yellow/gold/red palette was retired during the visual
  * realignment so priyanksethi.com slots cleanly into the SD network look.
+ *
+ * Typography matches SD Combined `Brand_Guidelines.md`: Inter for all
+ * headings and body (no secondary display serif).
  *
  * The CSS custom-property mirror lives in src/app/globals.css. If you change
  * a token here, change the corresponding `--brand-*` variable too.
  */
 
 export const PALETTE = {
-  label: "Stunning Dentistry — World-Class Clinic",
+  label: "Stunning Dentistry - World-Class Clinic",
   blue: {
     primary: "#0058C8",
     hover: "#0048A3",
@@ -50,5 +53,5 @@ export const PALETTE = {
 
 export const TYPE = {
   body: "Inter, sans-serif",
-  display: "Playfair Display, serif",
+  display: "Inter, sans-serif",
 } as const;

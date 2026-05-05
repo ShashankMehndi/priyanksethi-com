@@ -9,7 +9,7 @@ schema: WebPage
 
 # Terms of Use
 
-> v1 scaffold — replace with final terms.
+> v1 scaffold - replace with final terms.
 
 ## No medical advice
 

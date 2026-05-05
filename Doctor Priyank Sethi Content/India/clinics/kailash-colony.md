@@ -1,8 +1,8 @@
 ---
-title: South Delhi Clinic — Kailash Colony | Dr. Priyank Sethi
+title: South Delhi Clinic - Kailash Colony | Dr. Priyank Sethi
 description: "Stunning Dentistry, Kailash Colony, Greater Kailash, New Delhi. The South Delhi practice of Dr. Priyank Sethi."
 url: /clinics/kailash-colony
-h1: Kailash Colony — South Delhi
+h1: Kailash Colony - South Delhi
 ogImage: /images/clinic/kailash-colony.jpg
 schema: DentalClinic
 address: "A-3, 1st Floor, Kailash Colony, Greater Kailash, New Delhi-110048"
@@ -16,7 +16,7 @@ email: enquiry@stunningdentistry.com
 hours: "Mon-Sat 9:00 AM - 9:00 PM"
 ---
 
-# Kailash Colony — South Delhi
+# Kailash Colony - South Delhi
 
 **Address:** A-3, 1st Floor, Kailash Colony, Greater Kailash, New Delhi-110048
 
@@ -27,4 +27,4 @@ hours: "Mon-Sat 9:00 AM - 9:00 PM"
 
 → [Start an E-Consult](/e-consult) · [Other clinic](/clinics/netaji-subhash-place)
 
-> Book an appointment via **[stunningdentistry.com](https://stunningdentistry.com)** — the practice's commercial site handles scheduling and current treatment information.
+> Book an appointment via **[stunningdentistry.com](https://stunningdentistry.com)** - the practice's commercial site handles scheduling and current treatment information.

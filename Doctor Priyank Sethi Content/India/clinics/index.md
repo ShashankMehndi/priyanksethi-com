@@ -11,12 +11,12 @@ schema: CollectionPage
 
 Dr. Priyank Sethi practises at two Stunning Dentistry locations in Delhi.
 
-## South Delhi — Kailash Colony
+## South Delhi - Kailash Colony
 
 A-3, 1st Floor, Kailash Colony, Greater Kailash, New Delhi-110048
 [Location details](/clinics/kailash-colony)
 
-## North Delhi — Netaji Subhash Place
+## North Delhi - Netaji Subhash Place
 
 5th Floor, HB Twin Tower 1, Netaji Subhash Place, New Delhi-110034
 [Location details](/clinics/netaji-subhash-place)

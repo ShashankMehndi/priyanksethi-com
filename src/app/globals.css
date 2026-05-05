@@ -5,24 +5,24 @@
   --background: #ffffff;
   --foreground: #171717;
 
-  /** Section bands — warm ivory alternating with deeper sand (SD standard) */
+  /** Section bands - warm ivory alternating with deeper sand (SD standard) */
   --section-surface: #FBF6EA;
   --section-surface-alt: #F3E8D6;
 
-  /** Brand Blue — single SD palette (mirror of src/lib/brand-tokens.ts blue) */
+  /** Brand Blue - single SD palette (mirror of src/lib/brand-tokens.ts blue) */
   --brand-blue: #0058C8;
   --brand-blue-hover: #0048A3;
   --brand-blue-light: #2563EB;
   --brand-blue-deep: #001070;
 
-  /** Brand Gold — accent only on this site (SD standard) */
+  /** Brand Gold - accent only on this site (SD standard) */
   --brand-gold: #C9A84C;
   --brand-gold-soft: #D4BC70;
   --brand-gold-deep: #8D6E1B;
   --brand-gold-top: #F9E08E;
   --brand-gold-mid: #D4AF37;
 
-  /** Ink — dark navy text and surfaces */
+  /** Ink - dark navy text and surfaces */
   --brand-ink: #1B2A4A;
   --brand-ink-soft: #4A5878;
   --brand-ink-deep: #0F1A30;
@@ -41,7 +41,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-inter);
-  --font-heading: var(--font-playfair);
+  --font-heading: var(--font-inter);
 }
 
 body {
@@ -52,8 +52,9 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+/* SD Combined / Brand Guidelines: Inter for all headings and body */
 h1, h2, h3, h4 {
-  font-family: var(--font-playfair, "Playfair Display", serif);
+  font-family: var(--font-inter, Inter, sans-serif);
   letter-spacing: -0.01em;
 }
 
@@ -61,7 +62,7 @@ h1, h2, h3, h4 {
 .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 .hide-scrollbar::-webkit-scrollbar { display: none; width: 0; height: 0; }
 
-/* Inline link style — gold underline that thickens on hover */
+/* Inline link style - gold underline that thickens on hover */
 .prose-portfolio a,
 a.portfolio-link {
   color: var(--brand-ink);
@@ -90,7 +91,7 @@ a.portfolio-link:hover {
   .animate-marquee-scroll { animation: none; }
 }
 
-/* Carousel — horizontal touch-scroll with snap. Buttons render outside. */
+/* Carousel - horizontal touch-scroll with snap. Buttons render outside. */
 .snap-row {
   scroll-snap-type: x mandatory;
   scroll-padding-left: 1.25rem;

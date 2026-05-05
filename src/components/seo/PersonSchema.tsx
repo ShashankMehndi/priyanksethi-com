@@ -2,7 +2,7 @@ import { DOCTOR } from "@/config/doctor";
 
 /**
  * JSON-LD `Person` + `Dentist` schema for Dr. Priyank Sethi.
- * Renders a script tag — drop on the homepage and /about.
+ * Renders a script tag - drop on the homepage and /about.
  */
 export function PersonSchema() {
   const data = {
@@ -18,7 +18,7 @@ export function PersonSchema() {
     sameAs: Object.values(DOCTOR.social).filter(Boolean) as string[],
     hasCredential: [
       "Bachelor of Dental Surgery (BDS)",
-      "Master of Dental Surgery (MDS) — Conservative Dentistry & Micro-Endodontics",
+      "Master of Dental Surgery (MDS) - Conservative Dentistry & Micro-Endodontics",
       "Ph.D. (Faculty of Dental Sciences)",
       "Internationally Certified Digital Smile Designer",
     ],

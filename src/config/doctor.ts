@@ -53,7 +53,7 @@ export type DoctorConfig = {
   };
 
   recaptcha: {
-    /** v3 site key (provision a new one — do not reuse the legacy v2 key). */
+    /** v3 site key (provision a new one - do not reuse the legacy v2 key). */
     siteKey?: string;
   };
 };
@@ -77,14 +77,14 @@ export const DOCTOR: DoctorConfig = {
   clinics: [
     {
       slug: "kailash-colony",
-      name: "Kailash Colony — South Delhi",
+      name: "Kailash Colony - South Delhi",
       region: "South Delhi",
       address: "A-3, 1st Floor, Kailash Colony, Greater Kailash, New Delhi",
       postalCode: "110048",
     },
     {
       slug: "netaji-subhash-place",
-      name: "Netaji Subhash Place — North Delhi",
+      name: "Netaji Subhash Place - North Delhi",
       region: "North Delhi",
       address: "5th Floor, HB Twin Tower 1, Netaji Subhash Place, New Delhi",
       postalCode: "110034",

@@ -1,5 +1,5 @@
 ---
-title: Stunning Dentistry — The Brand I Built | Dr. Priyank Sethi
+title: Stunning Dentistry - The Brand I Built | Dr. Priyank Sethi
 description: Stunning Dentistry is the boutique dental practice founded by Dr. Priyank Sethi. The story of how it came to be.
 url: /stunning-dentistry
 h1: Stunning Dentistry
@@ -21,8 +21,8 @@ The boutique dental practice founded and led by Dr. Priyank Sethi.
 
 ## Where to find Stunning Dentistry
 
-- [South Delhi — Kailash Colony](/clinics/kailash-colony)
-- [North Delhi — Netaji Subhash Place](/clinics/netaji-subhash-place)
+- [South Delhi - Kailash Colony](/clinics/kailash-colony)
+- [North Delhi - Netaji Subhash Place](/clinics/netaji-subhash-place)
 
 ## Visit the practice site
 

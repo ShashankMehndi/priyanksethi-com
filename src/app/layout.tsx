@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import Script from "next/script";
 
@@ -11,23 +11,17 @@ import { MobileBottomBar } from "@/components/layout/MobileBottomBar";
 
 import "./globals.css";
 
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-playfair",
-  weight: ["500", "600", "700"],
-});
-
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-inter",
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL(DOCTOR.brand.siteUrl),
   title: {
-    default: `${DOCTOR.name} — Implant & Cosmetic Dentist`,
+    default: `${DOCTOR.name} - Implant & Cosmetic Dentist`,
     template: `%s | ${DOCTOR.name}`,
   },
   description: DOCTOR.tagline,
@@ -43,7 +37,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const ga = DOCTOR.analytics.gaMeasurementId;
   return (
-    <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
+    <html lang="en" className={inter.variable}>
       <body className="min-h-screen bg-white font-body text-brand-ink antialiased pb-[calc(2.75rem+2.5rem+env(safe-area-inset-bottom,0px))] md:pb-0">
         <AnnouncementTicker />
         <Header />

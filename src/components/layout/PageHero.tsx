@@ -1,6 +1,6 @@
 import { Container } from "@/components/ui/Container";
 
-/** Generic inner-page hero — for routes that don't have their own custom hero. */
+/** Generic inner-page hero - for routes that don't have their own custom hero. */
 export function PageHero({
   eyebrow,
   title,

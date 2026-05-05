@@ -1,6 +1,6 @@
 ---
 title: Case Studies | Dr. Priyank Sethi
-description: "Notable smile transformations and complex cases treated by Dr. Priyank Sethi — a portfolio of work spanning cosmetic, implant and full-mouth rehabilitation."
+description: "Notable smile transformations and complex cases treated by Dr. Priyank Sethi - a portfolio of work spanning cosmetic, implant and full-mouth rehabilitation."
 url: /case-studies
 h1: Case Studies
 ogImage: /images/case-studies/p7.jpg

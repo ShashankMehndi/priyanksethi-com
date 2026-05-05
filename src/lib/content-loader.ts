@@ -103,7 +103,7 @@ function parseFile(path: string): ContentPage | null {
   const body = raw.slice(fmEnd + 4).replace(/^\n+/, "");
   const data = parseYaml(fmRaw) as Frontmatter;
   if (!data || typeof data.url !== "string") return null;
-  // Strip the leading body H1 — the page renderer uses `h1` from frontmatter.
+  // Strip the leading body H1 - the page renderer uses `h1` from frontmatter.
   const bodyStripped = body.replace(/^#\s+[^\n]+\n+/, "");
   return {
     source: path.slice(ROOT.length + 1),

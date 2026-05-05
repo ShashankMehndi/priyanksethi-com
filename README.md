@@ -1,6 +1,6 @@
 # priyanksethi-com
 
-Dr. Priyank Sethi's personal portfolio site — Next.js 16 + React 19 + Tailwind v4. **A doctor portfolio, not a clinic site.** Stunning Dentistry is the brand he founded; transactional flows live there.
+Dr. Priyank Sethi's personal portfolio site - Next.js 16 + React 19 + Tailwind v4. **A doctor portfolio, not a clinic site.** Stunning Dentistry is the brand he founded; transactional flows live there.
 
 Built fresh (not forked from `stunningdentistry-au`) so the IA can be portfolio-shaped (case studies, press, publications, speaking) instead of commercial (book/buy treatments).
 
@@ -66,7 +66,7 @@ priyanksethi-com/
 
 ## Key visual rules
 
-The portfolio reuses the engine's design language (Inter + Playfair Display, warm-cream section bands, gold accent) but with a **different palette** to differentiate from Stunning Dentistry:
+The portfolio reuses the engine's design language (Inter per SD Combined brand typography, warm-cream section bands, gold accent) but with a **different palette** to differentiate from Stunning Dentistry:
 
 - **Gold** `#FFB301` (primary brand), `#FFD15C` soft, `#A87400` deep
 - **Ink** `#222222` (primary text / surfaces), `#4A4A4A` soft
@@ -100,7 +100,7 @@ videos:
 body markdown ...
 ```
 
-Parsed by `src/lib/content-loader.ts` into a `ContentPage` and looked up by `getPage(url)`. The body is rendered via `src/lib/markdown.tsx` (a small handwritten renderer — no `react-markdown` dependency).
+Parsed by `src/lib/content-loader.ts` into a `ContentPage` and looked up by `getPage(url)`. The body is rendered via `src/lib/markdown.tsx` (a small handwritten renderer - no `react-markdown` dependency).
 
 ## Develop
 
@@ -119,7 +119,7 @@ Copy `.env.example` to `.env.local`. The relevant variables:
 | Variable | Purpose |
 |---|---|
 | `NEXT_PUBLIC_GA_ID` | GA4 Measurement ID. Gate the analytics tag in `app/layout.tsx`. |
-| `NEXT_PUBLIC_RECAPTCHA_SITE_KEY` | Reserved — not yet wired into the form. |
+| `NEXT_PUBLIC_RECAPTCHA_SITE_KEY` | Reserved - not yet wired into the form. |
 | `ENQUIRY_EMAIL` | Where E-Consult and contact submissions are sent. Defaults to `enquiry@stunningdentistry.com`. |
 | `ENQUIRY_FROM_EMAIL` | From-address used by nodemailer. Use a verified domain. |
 | `SMTP_HOST` / `SMTP_PORT` / `SMTP_USER` / `SMTP_PASS` | nodemailer transport. If unset, the API logs payloads but does not deliver. |
@@ -129,7 +129,7 @@ Copy `.env.example` to `.env.local`. The relevant variables:
 - Vercel project: target the **`sd-hub`** team (not the personal account that owns `stunningdentistry-com`).
 - Domain: `priyanksethi.com`. Add the CNAME at the registrar; lower TTL 48h before cutover.
 - Cutover plan + DNS steps are in `/Users/hope_rebirth/.claude/plans/its-our-old-folmat-velvet-eagle.md`.
-- **No hreflang** to the SD network — this is a different brand. Canonical is always `https://priyanksethi.com${pathname}`.
+- **No hreflang** to the SD network - this is a different brand. Canonical is always `https://priyanksethi.com${pathname}`.
 
 ## What's still scaffolded
 
@@ -143,7 +143,7 @@ The structure is wired; certain pages need Dr. Sethi's voice or factual data bef
 - **`/awards`, `/memberships`**: specific entries with year + awarding body
 - **`/publications`**: paper list with DOIs
 - **`/speaking`**: talk list with venue + date
-- **`/blog`**: scaffold only — no posts yet
+- **`/blog`**: scaffold only - no posts yet
 - **`/privacy`, `/terms`**: legal review by counsel familiar with India DPDP + GDPR
 - **`public/og.png`**: 1200×630 OG composite
 - **GA4 + reCAPTCHA keys** (env)

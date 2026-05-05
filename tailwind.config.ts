@@ -34,7 +34,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        heading: ["var(--font-playfair)", "Playfair Display", "serif"],
+        /* SD Combined Brand Guidelines - Inter for headings and body */
+        heading: ["var(--font-inter)", "Inter", "sans-serif"],
         body: ["var(--font-inter)", "Inter", "sans-serif"],
       },
       keyframes: {

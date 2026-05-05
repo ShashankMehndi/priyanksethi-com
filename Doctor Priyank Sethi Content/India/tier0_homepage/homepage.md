@@ -40,7 +40,7 @@ Founder of **Stunning Dentistry**. Implant and cosmetic dentist. Over 1,000 pati
 
 ## The brand he built
 
-[Stunning Dentistry](/stunning-dentistry) — a boutique dental practice for patients who want **No-Compromise Dentistry**.
+[Stunning Dentistry](/stunning-dentistry) - a boutique dental practice for patients who want **No-Compromise Dentistry**.
 
 ## Talk to Dr. Sethi
 

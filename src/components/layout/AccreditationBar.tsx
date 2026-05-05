@@ -1,5 +1,5 @@
 /**
- * Accreditation / trust-badge marquee — rendered at the bottom of `<Footer>`,
+ * Accreditation / trust-badge marquee - rendered at the bottom of `<Footer>`,
  * sticky on mobile so it sits just above the bottom CTA bar while scrolling the footer.
  */
 

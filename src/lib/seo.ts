@@ -17,7 +17,7 @@ export function buildMetadata(input: PageSeo): Metadata {
   const description = input.description ?? DOCTOR.tagline;
   const ogImage = absolute(input.ogImage ?? DOCTOR.brand.ogImage);
   return {
-    // Opt out of the layout's "%s | Dr. Priyank Sethi" template — page
+    // Opt out of the layout's "%s | Dr. Priyank Sethi" template - page
     // titles already include the doctor name when appropriate.
     title: { absolute: title },
     description,

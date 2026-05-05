@@ -1,6 +1,6 @@
 ---
 title: E-Consult with Dr. Priyank Sethi
-description: "A direct, non-obligatory online consultation with Dr. Priyank Sethi — audio or video call. For complex cases, second opinions, or patients planning to travel to India."
+description: "A direct, non-obligatory online consultation with Dr. Priyank Sethi - audio or video call. For complex cases, second opinions, or patients planning to travel to India."
 url: /e-consult
 h1: E-Consult with Dr. Priyank Sethi
 ogImage: /images/doctor/img2.jpg
@@ -13,7 +13,7 @@ form:
 
 # E-Consult with Dr. Priyank Sethi
 
-A direct, non-obligatory consultation. Talk to Dr. Sethi by **audio or video call** — share your concern, optionally attach a selfie or X-ray, and get an honest opinion before any commitment.
+A direct, non-obligatory consultation. Talk to Dr. Sethi by **audio or video call** - share your concern, optionally attach a selfie or X-ray, and get an honest opinion before any commitment.
 
 This consultation is best suited for:
 
@@ -27,4 +27,4 @@ The form on this page collects:
 2. Description of your dental condition
 3. (Optional) selfie or smiling picture
 4. (Optional) X-ray
-5. Contact details — name, mobile, email, country
+5. Contact details - name, mobile, email, country

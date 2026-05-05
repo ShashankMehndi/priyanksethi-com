@@ -3,9 +3,9 @@
 import { useMemo } from "react";
 
 /**
- * Top blue marquee bar — SD-network signature element.
+ * Top blue marquee bar - SD-network signature element.
  * Carried over from `stunningdentistry-au/src/components/sections/AnnouncementTicker.tsx`
- * but stripped of the heavy region/scroll/footer-sentinel machinery —
+ * but stripped of the heavy region/scroll/footer-sentinel machinery;
  * single-tenant sites don't need any of that.
  *
  * The bar is sticky to the very top, sits ABOVE the Header.
@@ -13,7 +13,7 @@ import { useMemo } from "react";
 
 type Item = { label: string; iconKey?: "shield" | "doctor" | "hospital" | "tooth" | "globe" | "calendar" };
 
-/** Top ticker — credentials + achievements (not hours/locations). */
+/** Top ticker - credentials + achievements (not hours/locations). */
 const DEFAULT_ITEMS: Item[] = [
   { label: "Dr. Priyank Sethi · BDS · MDS · Ph.D. (Faculty of Dental Sciences)", iconKey: "doctor" },
   { label: "Digital Smile Designer · internationally certified", iconKey: "shield" },

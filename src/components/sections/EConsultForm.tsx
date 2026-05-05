@@ -41,7 +41,7 @@ export function EConsultForm() {
   if (status === "success") {
     return (
       <div className="rounded-2xl border border-brand-gold/40 bg-section-warm p-8 text-center">
-        <h3 className="font-heading text-2xl font-semibold text-brand-ink">Thanks — your request is in.</h3>
+        <h3 className="font-heading text-2xl font-semibold text-brand-ink">Thanks. Your request is in.</h3>
         <p className="mt-3 text-brand-ink-soft">
           Dr. Sethi&apos;s team will reach out shortly. For anything urgent, call{" "}
           <a href={`tel:${DOCTOR.contact.phone}`} className="portfolio-link font-semibold">
@@ -56,7 +56,7 @@ export function EConsultForm() {
     <form onSubmit={onSubmit} className="space-y-5 rounded-2xl bg-white p-6 ring-1 ring-section-alt md:p-8">
       <Field label="1. Preference">
         <select name="consultationVia" required className={inputCls}>
-          <option value="">— Select —</option>
+          <option value=""> - Select - </option>
           <option>Audio Call</option>
           <option>Video Call</option>
         </select>

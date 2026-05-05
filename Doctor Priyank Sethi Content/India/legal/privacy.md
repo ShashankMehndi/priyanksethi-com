@@ -9,7 +9,7 @@ schema: WebPage
 
 # Privacy Policy
 
-> v1 scaffold — replace with the final policy reviewed by counsel familiar with India's DPDP Act and GDPR (for overseas patients).
+> v1 scaffold - replace with the final policy reviewed by counsel familiar with India's DPDP Act and GDPR (for overseas patients).
 
 ## What we collect
 

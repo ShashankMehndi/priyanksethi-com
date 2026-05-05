@@ -1,5 +1,5 @@
 ---
-title: Mr. Russell Bolger — Case Study | Dr. Priyank Sethi
+title: Mr. Russell Bolger - Case Study | Dr. Priyank Sethi
 description: "A case study of Mr. Russell Bolger's smile transformation by Dr. Priyank Sethi."
 url: /case-studies/case/russell-bolger
 h1: Mr. Russell Bolger
@@ -14,11 +14,11 @@ celebrity: false
 
 ## The story
 
-> v1 scaffold — author the patient's story (with permission): clinical starting point, why they came, treatment plan, what was delivered, what changed afterward. 200–400 words is plenty.
+> v1 scaffold - author the patient's story (with permission): clinical starting point, why they came, treatment plan, what was delivered, what changed afterward. 200–400 words is plenty.
 
 ## What was done
 
-> Treatment summary (e.g. "Full mouth rehabilitation with zirconia crowns over 3 weeks"). Avoid pricing — this is a portfolio, not a quote.
+> Treatment summary (e.g. "Full mouth rehabilitation with zirconia crowns over 3 weeks"). Avoid pricing - this is a portfolio, not a quote.
 
 ## Outcome
 

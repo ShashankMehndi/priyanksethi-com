@@ -1,6 +1,6 @@
 ---
 title: Global Practice | Dr. Priyank Sethi
-description: "Patients from 30+ countries — United States, United Kingdom, Australia, New Zealand, South Africa, UAE, Europe — have trusted Dr. Priyank Sethi for complex dental work."
+description: "Patients from 30+ countries - United States, United Kingdom, Australia, New Zealand, South Africa, UAE, Europe - have trusted Dr. Priyank Sethi for complex dental work."
 url: /global-practice
 h1: A Global Practice
 ogImage: /images/doctor/img2.jpg
