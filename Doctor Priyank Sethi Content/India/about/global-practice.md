@@ -21,8 +21,6 @@ Over **1,000 patients** from **30+ countries** have travelled to Delhi for treat
 - United Arab Emirates
 - Continental Europe
 
-> Add a map visualization in v2. Add anonymised patient stories from each region.
-
 ## Why patients travel
 
 - Specialist depth in implant and full-mouth work

@@ -74,11 +74,8 @@ function CaseCard({ c, className }: { c: CaseEntry; className: string }) {
           Celebrity case
         </span>
       )}
-      <div className="flex items-center justify-between gap-2 p-4">
+      <div className="p-4">
         <p className="font-heading text-base font-semibold text-brand-ink">{c.name}</p>
-        <span className="text-xs font-medium uppercase tracking-wider text-brand-blue">
-          Read →
-        </span>
       </div>
     </Link>
   );

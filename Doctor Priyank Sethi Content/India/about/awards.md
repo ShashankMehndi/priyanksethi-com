@@ -16,6 +16,4 @@ schema: Person
 
 ![Awards collage](/images/awards/all-awards.jpg)
 
-> Add specific awards with year, awarding body, and citation. v1 placeholder - real list to be authored.
-
 → See also: [Memberships](/memberships) · [Press](/press)

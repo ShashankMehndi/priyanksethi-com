@@ -62,7 +62,7 @@ export function DoctorHero({
           )}
 
           <div className="mt-8 flex flex-wrap gap-2.5 text-brand-ink md:mt-9 md:gap-3">
-            <Button href="/e-consult" variant="primary" className="px-5 py-2.5 text-xs md:px-6 md:py-3 md:text-sm">
+            <Button href="/e-consult" variant="gold" className="px-5 py-2.5 text-xs md:px-6 md:py-3 md:text-sm">
               Talk to Dr. Sethi
             </Button>
             <Button href="/case-studies" variant="ghost" className="px-5 py-2.5 text-xs md:px-6 md:py-3 md:text-sm">
@@ -80,7 +80,7 @@ export function DoctorHero({
               fill
               sizes="(min-width: 768px) 420px, 72vw"
               priority
-              className="object-cover object-[center_12%] md:object-center"
+              className="object-cover object-[center_45%] md:object-[center_35%]"
             />
           </div>
         </div>

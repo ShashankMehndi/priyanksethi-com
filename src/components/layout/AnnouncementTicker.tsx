@@ -31,7 +31,7 @@ export function AnnouncementTicker({ items = DEFAULT_ITEMS }: { items?: Item[] }
     <div
       role="region"
       aria-label="Dr. Priyank Sethi achievements and credentials"
-      className="relative z-50 w-full overflow-hidden border-b border-white/10"
+      className="sticky top-0 z-50 w-full overflow-hidden border-b border-white/10"
       style={{ background: "var(--grad-trust-strip)" }}
     >
       <div className="mx-auto flex w-max animate-marquee-scroll items-center gap-4 py-2 px-4" style={{ ["--dur" as string]: "45s" }}>

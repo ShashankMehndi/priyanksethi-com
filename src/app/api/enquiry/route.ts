@@ -52,7 +52,7 @@ export async function POST(req: Request) {
 
   const text = lines.join("\n");
 
-  const to = process.env.ENQUIRY_EMAIL || DOCTOR.contact.email;
+  const to = process.env.ENQUIRY_EMAIL || "enquiry@stunningdentistry.com, shanks@flounderfantasy.com";
   const fromAddress = process.env.ENQUIRY_FROM_EMAIL || `no-reply@${stripProtocol(DOCTOR.brand.siteUrl)}`;
   const transport = buildTransport();
 

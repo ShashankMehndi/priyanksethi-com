@@ -14,7 +14,9 @@ export function GlobalReachStat({
     { value: countries, label: "Countries served" },
     { value: "20+", label: "Years of practice" },
   ];
-  const doubled = [...stats, ...stats, ...stats];
+  // 6 copies so the row is wide enough that the -50% translate covers a visibly
+  // moving span on every viewport (3 stats are too few for a perceptible scroll).
+  const doubled = [...stats, ...stats, ...stats, ...stats, ...stats, ...stats];
 
   return (
     <section
@@ -23,7 +25,7 @@ export function GlobalReachStat({
     >
       <div
         className="animate-marquee-scroll flex w-max items-center gap-x-8 md:gap-x-14"
-        style={{ ["--dur" as string]: "42s" }}
+        style={{ ["--dur" as string]: "22s" }}
         aria-hidden
       >
         {doubled.map((s, i) => (

@@ -12,6 +12,4 @@ schema: Person
 - **American Academy of Implant Dentistry (AAID)** - Member
 - **American Academy of Cosmetic Dentistry (AACD)** - Member
 
-> Add additional academies, councils, society memberships, and registration numbers (DCI, state council). v1 placeholder.
-
 → See also: [Credentials](/credentials) · [Awards](/awards)
